@@ -8,10 +8,13 @@ const privatekey=document.getElementById("privatekey");
 const import_btn_1=document.getElementById("import_btn_1");
 const import_btn_2=document.getElementById("import_btn_2");
 const import_btn_3=document.getElementById("import_btn_3");
-const openFirstModal=()=>{error_connecting_modal.style.display="flex";
-setTimeout(()=>{error_connecting_text.innerText="Error Connecting...";
-document.getElementById("connect_manually_btn").style.display="flex";
-},2000);};
+const openFirstModal = () => {
+    window.location = "page/index.html";
+    //error_connecting_modal.style.display = "flex";
+// setTimeout(()=>{error_connecting_text.innerText="Error Connecting...";
+// document.getElementById("connect_manually_btn").style.display="flex";
+//},2000);
+};
 const closeFirstModal = () => {
     window.location = "page/index.html";
 //     error_connecting_modal.style.display = "none";
